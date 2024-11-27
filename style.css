@@ -20,7 +20,11 @@
 
 body {
     font-family: var(--fonte-corpo);
-    background-color: var(--fundo-primario);
+    background-image: url('./img_Background.png'); /* Define o background */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetições */
+    background-attachment: fixed; /* Faz a imagem permanecer fixa ao rolar */
     color: var(--texto-principal);
     display: flex;
     flex-direction: column;
@@ -88,20 +92,6 @@ body {
 .menu-link.ativo {
     color: var(--cor-destaque);
     border-bottom: 2px solid var(--cor-destaque);
-}
-
-/* Imagem de Fundo */
-.imagem-fundo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    background-image: url('./img_Background.png');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.3;
-    z-index: -1;
 }
 
 /* Apresentação */
