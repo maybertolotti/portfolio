@@ -4,6 +4,7 @@
     --fundo-primario: #f5f7fa;
     --fundo-cabecalho: #2c3e50;
     --texto-principal: #34495e;
+    --texto-destaque: #2b2b2b; /* Cor mais escura para destaque */
     --cor-destaque: #3498db;
     --borda-suave: #bdc3c7;
     --texto-escuro: #7f8c8d;
@@ -104,20 +105,21 @@ body {
     font-family: var(--fonte-cabecalho);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--fundo-cabecalho);
+    color: var(--cor-destaque);
     font-weight: bold;
 }
 
-.introducao p {
+.introducao .introducao-texto {
     font-family: var(--fonte-corpo);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: var(--texto-escuro);
+    color: var(--texto-destaque); /* Cor mais escura */
+    font-weight: bold; /* Negrito */
 }
 
 /* Seção de Projetos */
 .projetos {
-    margin-top: 5rem; /* Adiciona espaçamento acima de toda a seção */
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -126,8 +128,7 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--texto-principal);
-    margin-bottom: 3rem; /* Espaçamento abaixo do título */
-    margin-top: 2rem; /* Espaçamento acima do título */
+    margin-bottom: 3rem;
 }
 
 .cards-container {
@@ -135,8 +136,8 @@ body {
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-    margin-top: 3rem; /* Espaçamento entre o título e os cards */
-    padding-bottom: 3rem; /* Espaçamento inferior para conforto visual */
+    margin-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .card {
@@ -148,7 +149,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 2rem; /* Espaçamento vertical entre os cards */
+    margin-bottom: 2rem;
 }
 
 .card:hover {
@@ -186,21 +187,3 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.card .btn:hover {
-    background-color: #2980b9;
-}
-
-/* Ocultar Cards */
-.escondido {
-    display: none;
-}
-
-/* Rodapé */
-.rodape {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--fundo-cabecalho);
-    color: white;
-    margin-top: auto;
-    border-top: 2px solid var(--borda-suave);
-}
