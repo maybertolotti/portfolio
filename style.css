@@ -105,7 +105,7 @@ body {
     font-family: var(--fonte-cabecalho);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--cor-destaque);
+    color: var(--texto-escuro);
     font-weight: bold;
 }
 
