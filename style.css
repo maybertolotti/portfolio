@@ -188,3 +188,56 @@ body {
     margin-top: auto;
     border-top: 2px solid var(--borda-suave);
 }
+
+/* Seção de Projetos */
+.projetos {
+    margin-top: 5rem; /* Adiciona espaçamento acima de toda a seção */
+    text-align: center;
+}
+
+.projetos h2 {
+    font-family: var(--fonte-cabecalho);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--texto-principal);
+    margin-bottom: 3rem; /* Espaçamento abaixo do título */
+    margin-top: 2rem; /* Espaçamento acima do título */
+}
+
+/* Seção de Projetos */
+.projetos {
+    margin-top: 5rem; /* Adiciona espaçamento acima de toda a seção */
+    text-align: center;
+}
+
+.projetos h2 {
+    font-family: var(--fonte-cabecalho);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--texto-principal);
+    margin-bottom: 3rem; /* Espaçamento abaixo do título */
+    margin-top: 2rem; /* Espaçamento acima do título */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem; /* Espaçamento entre o título e os cards */
+    padding-bottom: 3rem; /* Espaçamento inferior para conforto visual */
+}
+
+.card {
+    background-color: var(--fundo-primario);
+    border: 1px solid var(--borda-suave);
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem; /* Espaçamento vertical entre os cards */
+}
+
+
