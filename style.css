@@ -19,11 +19,6 @@
     box-sizing: border-box;
 }
 
-/* Adicionado para ocultar elementos temporariamente */
-.escondido {
-    display: none !important; /* Garante que elementos ocultos não ocupem espaço */
-}
-
 body {
     font-family: var(--fonte-corpo);
     background-image: url('./img_Background.png'); /* Define o background */
@@ -107,7 +102,7 @@ body {
 }
 
 .introducao h2 {
-    font-family: var(--fonte-cabecalho);
+    font-family: var(--fundo-cabecalho);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: var(--fundo-cabecalho);
@@ -115,7 +110,7 @@ body {
 }
 
 .introducao .introducao-texto {
-    font-family: var(--fonte-corpo);
+    font-family: var(--fundo-cabecalho);
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: var(--texto-destaque); /* Cor mais escura */
@@ -177,7 +172,7 @@ body {
 .card .paragrafo-sutil {
     font-family: var(--fonte-corpo);
     font-size: 0.9rem;
-    color: var(--texto-principal); /* Corrigido para manter a cor consistente */
+    color: var(--fundo-cabecalho);
     margin-bottom: 1.5rem;
 }
 
@@ -192,11 +187,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.card .btn:hover {
-    background-color: #2980b9;
-}
-
 /* Rodapé */
 .rodape {
     text-align: center;
-    padding: 
+    padding: 1rem;
+    background-color: var(--fundo-cabecalho); /* Restaurado para #2c3e50 */
+    color: white;
+    margin-top: auto;
+    border-top: 2px solid var(--borda-suave);
+}
