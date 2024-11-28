@@ -187,3 +187,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--fundo-cabecalho); /* Restaurado para #2c3e50 */
+    color: white;
+    margin-top: auto;
+    border-top: 2px solid var(--borda-suave);
+}
